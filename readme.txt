@@ -78,3 +78,13 @@ supervisorctl status <имя файла конф>
 supervisor restart <имя файла конф>
 
 Убирть процесс killall gunicorn
+
+
+PG
+apt-get install postgresql
+su - postgres
+psql
+
+CREATE DATABASE yourdbname;
+CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
+GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
